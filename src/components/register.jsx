@@ -3,7 +3,8 @@ import './register.css'
 
 class Register extends React.Component {
     render() {
-      return (
+      return ( 
+        <div id="totalregister">
         <div className="container-fluid">
         <div className="row">
             <div className="col-md-3"></div>
@@ -50,6 +51,7 @@ class Register extends React.Component {
             </div>
             <div className="col-md-3"></div>
         </div>
+    </div>
     </div>
     )
     }

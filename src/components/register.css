@@ -1,71 +1,19 @@
-.App {
-    text-align: center;
-  }
-  
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 40vmin;
-    pointer-events: none;
-  }
-  
-  .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-  
-  .App-link {
-    color: #61dafb;
-  }
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
-  
-  
-  body {
-    color: #6a6f8c;
-    background: #c8c8c8;
-    font: 600 16px/18px 'Open Sans', sans-serif;
-  }
-  
-  *, :after, :before {
-    box-sizing: border-box
-  }
-  
-  .clearfix:after, .clearfix:before {
-    content: '';
-    display: table
-  }
-  
-  .clearfix:after {
-    clear: both;
-    display: block
-  }
-  
+#totalregister {
+        background-image: url('../images/background.jpg');
+        background-repeat: no-repeat;
+}
   a {
     color: inherit;
     text-decoration: none
   }
   
   .login-wrap {
-    width: 500px;
+    width: 100%;
     height: 90%;
     margin-top: 15px;
     padding-bottom: 40px;
     border-radius: 10px;
-    background-image: radial-gradient(closest-side ellipse at center, rgb(123, 176, 180), rgb(51, 100, 96));
+    background-image: radial-gradient(closest-side ellipse at center, rgb(99, 129, 156), rgb(47, 100, 109));
   }
   
   .login-html {

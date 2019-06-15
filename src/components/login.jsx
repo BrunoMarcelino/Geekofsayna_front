@@ -4,59 +4,40 @@ import './login.css';
 class Login extends React.Component {
     render() {
         return (
-            <div class="row">
-                <div class="col s12">
-                    <div class="container"><div id="login-page" class="row">
-                        <div class="col s12 m6 l4 z-depth-4 card-panel border-radius-6 login-card bg-opacity-8">
-                            <form class="login-form">
-                                <div class="row">
-                                    <div class="input-field col s12">
-                                        <h5 class="ml-4">Sign in</h5>
-                                    </div>
+            <div className="container-fluid">
+            <div className="row">
+            <div className="col-md-3"></div>
+                <div className="col-md-6">
+                    <div className="login-wrap">
+                        <div className="login-html">
+                            <div className="login-form">
+                                <div className="sign-in-htm">
+                                    <div className="hr"></div>
+                                    <form >
+                                        <h4>CONNEXION</h4><br />
+                                        <div className="group">
+                                            <label for="user" className="label">Nom d'utilisateur:</label>
+                                            <input id="user" type="text" className="input" name="userName"  />
+                                        </div><br />
+                                        <div className="group">
+                                            <label for="pass" className="label">Mot de passe:</label>
+                                            <input id="pass" type="passWord" className="input" name="passWord" />
+                                        </div>
+                                        <br />
+                                        <div className="group">
+                                            <button className="button" id="boutton">Se connecter</button>
+                                        </div>
+                                    </form>
                                 </div>
-                                <div class="row margin">
-                                    <div class="input-field col s12">
-                                        <i class="material-icons prefix pt-2">person_outline</i>
-                                        <input id="username" type="text" />
-                                        <label for="username" class="center-align">Username</label>
-                                    </div>
-                                </div>
-                                <div class="row margin">
-                                    <div class="input-field col s12">
-                                        <i class="material-icons prefix pt-2">lock_outline</i>
-                                        <input id="password" type="password" />
-                                        <label for="password">Password</label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col s12 m12 l12 ml-2 mt-1">
-                                        <p>
-                                            <label>
-                                                <input type="checkbox" />
-                                                <span>Remember Me</span>
-                                            </label>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="input-field col s12">
-                                        <a href="index.html" class="btn waves-effect waves-light border-round gradient-45deg-purple-deep-orange col s12">Login</a>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="input-field col s6 m6 l6">
-                                        <p class="margin medium-small"><a href="user-register.html">Register Now!</a></p>
-                                    </div>
-                                    <div class="input-field col s6 m6 l6">
-                                        <p class="margin right-align medium-small"><a href="user-forgot-password.html">Forgot password ?</a></p>
-                                    </div>
-                                </div>
-                            </form>
+
+
+                            </div>
                         </div>
                     </div>
-                    </div>
                 </div>
+                <div className="col-md-3"></div>
             </div>
+        </div>
         )
     }
 }

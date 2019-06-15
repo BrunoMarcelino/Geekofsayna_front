@@ -1,3 +1,165 @@
-.register {
-    color: rgb(34, 92, 107);
-}
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  
+  body {
+    color: #6a6f8c;
+    background: #c8c8c8;
+    font: 600 16px/18px 'Open Sans', sans-serif;
+  }
+  
+  *, :after, :before {
+    box-sizing: border-box
+  }
+  
+  .clearfix:after, .clearfix:before {
+    content: '';
+    display: table
+  }
+  
+  .clearfix:after {
+    clear: both;
+    display: block
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none
+  }
+  
+  .login-wrap {
+    width: 500px;
+    height: 90%;
+    margin-top: 15px;
+    padding-bottom: 40px;
+    border-radius: 10px;
+    background-image: radial-gradient(closest-side ellipse at center, rgb(123, 176, 180), rgb(51, 100, 96));
+  }
+  
+  .login-html {
+    width: 100%;
+    height: 600px;
+    padding: 40px 70px 50px 70px;
+  }
+  
+  .login-html .tab {
+    font-size: 18px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    color: rgb(243, 234, 234); 
+  }
+  
+  .login-html .tab:hover {
+    color: #90d8ec;
+  }
+  
+  .login-html .sign-in:checked+.tab, .login-html .sign-up:checked+.tab {
+    color: #2ec7db;
+  }
+  
+  .login-form {
+    min-height: 345px;
+    position: relative;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  
+  .login-form .group {
+    margin-bottom: 15px;
+  }
+  .login-form .group .label, .login-form .group .input, .login-form .group  {
+    width: 100%;
+    color: rgb(18, 25, 27);
+    display: block;
+  }
+  
+  .login-form .group .input, .login-form .group .button {
+    border: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    background: rgba(236, 208, 208, 0.911);
+  
+  }
+  
+  .login-form .group input[data-type="password"] {
+    -webkit-text-security: circle;
+  }
+  
+  .login-form .group .label {
+    color: hsl(175, 21%, 88%);
+    font-size: 15px;
+    font-weight: bolder;
+    text-decoration-line: underline;
+  }
+  #boutton {
+    color: #c3c6cc;
+  }
+  
+  .login-form .group .button {
+    background: #3a95a1;
+    font-weight: bold;
+    font-size: 20px;
+    width: 80%;
+    margin-left: 10%;
+  }
+  
+  .login-html .sign-in:checked+.tab+.sign-up+.tab+.login-form .sign-in-htm {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  
+  .login-html .sign-up:checked+.tab+.login-form .sign-up-htm {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  
+  .hr {
+    height: 3px;
+    margin: 10px 0 10px 0;
+    background: rgba(255, 255, 255, .2);
+  }
+  
+  h4 {
+    color: rgb(144, 220, 230);
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    text-decoration-line: underline;
+  }

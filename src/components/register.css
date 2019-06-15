@@ -13,7 +13,8 @@
     margin-top: 15px;
     padding-bottom: 40px;
     border-radius: 10px;
-    background-image: radial-gradient(closest-side ellipse at center, rgb(99, 129, 156), rgb(47, 100, 109));
+    background-image: radial-gradient(closest-side ellipse at center, rgb(99, 156, 156), #006064);
+    opacity: 0.9;
   }
   
   .login-html {

@@ -31,3 +31,13 @@
     transform: rotate(360deg);
   }
 }
+
+#Totalhome {
+  background-color: #006064 !important;
+}
+#slide {
+  margin-top: 5px;
+}
+#h3slide {
+  font-weight: bold;
+}

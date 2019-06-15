@@ -33,5 +33,11 @@
 }
 
 #Totalhome {
-  background-color: blue !important;
+  background-color: #006064 !important;
+}
+#slide {
+  margin-top: 5px;
+}
+#h3slide {
+  font-weight: bold;
 }

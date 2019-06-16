@@ -52,3 +52,53 @@
 .white-text {
   cursor: pointer;
 }
+
+#image-article {
+  width: 100%;
+  height: 70%;
+}
+#fond-article {
+  background-color: #00838f;
+  margin-right: 10px;
+  padding-top: 10px;
+}
+#fond-pub {
+  background-color: #bdbdbd ;
+}
+.titre-article {
+  font-size: 30px;
+  color:white;
+  margin-bottom: 0px !important;
+}
+.hr-article {
+  height: 10px;
+  color: azure !important;
+}
+footer {
+  margin-top: 5px;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  color: white !important;
+  background-color: #006064;
+}
+span {
+  color: white;
+}
+#total {
+  margin-top: 5px;
+}
+.bot {
+  float: right;
+  margin-right: 30px;
+  margin-top: 5px;
+}
+h2 {
+  color: #20314b;
+  text-align: center;
+  margin-top: 5px;
+}
+#image-pub {
+  width: 100%;
+  height: 30%;
+}

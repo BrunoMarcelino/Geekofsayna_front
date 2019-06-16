@@ -94,18 +94,18 @@ class Home extends React.Component {
                   <MDBNavLink to="#!" className="accueil">Categorie</MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem active>
-                  <MDBNavLink to="#!" className="accueil">Protection</MDBNavLink>
+                  <MDBNavLink to="#!" className="accueil">Prevention</MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem active>
-                  <MDBNavLink to="#!" className="accueil">Medicaux</MDBNavLink>
+                  <MDBNavLink exact={this.forceUpdate} to="/" className="accueil">Medicament</MDBNavLink>
                 </MDBNavItem>
               </MDBNavbarNav>
               <MDBNavbarNav right>
                 <MDBNavItem active>
-                  <MDBNavLink to="" className="accueil">Login</MDBNavLink>
+                  <MDBNavLink to="/login" className="accueil">Login</MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem active>
-                  <MDBNavLink to="#!" className="accueil">Register</MDBNavLink>
+                  <MDBNavLink to="/register" className="accueil">Register</MDBNavLink>
                 </MDBNavItem>
               </MDBNavbarNav>
             </MDBCollapse>
@@ -131,8 +131,8 @@ class Home extends React.Component {
                   <MDBMask overlay="black-light" />
                 </MDBView>
                 <MDBCarouselCaption>
-                  <h3 className="h3-responsive " id="h3slide">Light mask</h3>
-                  <p>First text</p>
+                  <h3 className="h3-responsive " id="h3slide">Virus Intellectrons</h3>
+                  <p>Description du virus</p>
                 </MDBCarouselCaption>
               </MDBCarouselItem>
               <MDBCarouselItem itemId="2">
@@ -145,8 +145,8 @@ class Home extends React.Component {
                   <MDBMask overlay="black-strong" />
                 </MDBView>
                 <MDBCarouselCaption>
-                  <h3 className="h3-responsive" id="h3slide">Strong mask</h3>
-                  <p>Second text</p>
+                  <h3 className="h3-responsive" id="h3slide">Notre monde a bien reçu votre MSG</h3>
+                  <p>Votre position est dévoilée</p>
                 </MDBCarouselCaption>
               </MDBCarouselItem>
               <MDBCarouselItem itemId="3">
@@ -159,8 +159,8 @@ class Home extends React.Component {
                   <MDBMask overlay="black-slight" />
                 </MDBView>
                 <MDBCarouselCaption>
-                  <h3 className="h3-responsive" id="h3slide">Slight mask</h3>
-                  <p>Third text</p>
+                  <h3 className="h3-responsive" id="h3slide">Envahissement</h3>
+                  <p>de votre systéme solaire</p>
                 </MDBCarouselCaption>
               </MDBCarouselItem>
               <MDBCarouselItem itemId="4">
@@ -173,8 +173,8 @@ class Home extends React.Component {
                   <MDBMask overlay="black-light" />
                 </MDBView>
                 <MDBCarouselCaption>
-                  <h3 className="h3-responsive" id="h3slide">Sopot Beach</h3>
-                  <p>Taken june 21th by @mattonit</p>
+                  <h3 className="h3-responsive" id="h3slide">Ils sont en chemin</h3>
+                  <p>Préparer notre venue estimée</p>
                 </MDBCarouselCaption>
               </MDBCarouselItem>
             </MDBCarouselInner>
@@ -188,7 +188,7 @@ class Home extends React.Component {
                 <img src="../images/cerveau.png" id="image-article" alt="image1"/>
               </div>
               <div className="col-md-9">
-                <p className="titre-article"> Titre article</p>
+                <p className="titre-article"> Trouble mentale</p>
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque modi amet corporis perspiciatis quidem, ducimus sint nulla esse officiis enim inventore? Repudiandae ipsa nostrum beatae harum sunt, aspernatur dignissimos rem?</span>
                   <button className="btn btn-secondary bot">Commenter</button>
               </div>
@@ -197,7 +197,7 @@ class Home extends React.Component {
                 <img src="../images/main1.png" id="image-article" alt="image1"/>
               </div>
               <div className="col-md-9">
-                <p className="titre-article"> Titre article</p>
+                <p className="titre-article"> paralysie partielle des main</p>
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque modi amet corporis perspiciatis quidem, ducimus sint nulla esse officiis enim inventore? Repudiandae ipsa nostrum beatae harum sunt, aspernatur dignissimos rem?</span>
                 <button className="btn btn-secondary bot">Commenter</button>
               </div>
@@ -206,7 +206,7 @@ class Home extends React.Component {
                 <img src="../images/entendu.png" id="image-article" alt="image1"/>
               </div>
               <div className="col-md-9">
-                <p className="titre-article"> Titre article</p>
+                <p className="titre-article"> Déficience auditive</p>
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque modi amet corporis perspiciatis quidem, ducimus sint nulla esse officiis enim inventore? Repudiandae ipsa nostrum beatae harum sunt, aspernatur dignissimos rem?</span>
                 <button className="btn btn-secondary bot">Commenter</button>
               </div>
@@ -215,7 +215,7 @@ class Home extends React.Component {
                 <img src="../images/entend.png" id="image-article" alt="image1"/>
               </div>
               <div className="col-md-9">
-                <p className="titre-article"> Titre article</p>
+                <p className="titre-article">  Déficience auditive</p>
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque modi amet corporis perspiciatis quidem, ducimus sint nulla esse officiis enim inventore? Repudiandae ipsa nostrum beatae harum sunt, aspernatur dignissimos rem?</span>
                 <button className="btn btn-secondary bot">Commenter</button>
               </div>

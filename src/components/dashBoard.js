@@ -1,23 +1,19 @@
 import React from 'react';
-import { Redirect } from 'react-router-dom'
+
+import BreadcrumSection from './pages/sections/BreadcrumSection';
+import ModalSection from './pages/sections/ModalSection';
+import Side from './sideNavigation';
 
 class DashBoard extends React.Component {
-    renderRedirect = () => {
-       
-        if(localStorage.removeItem('connectee')){
-             return <Redirect to='/login' />
-        }
-         
-        
-      }
+    
     render() {
         return (
-            <div>dashBoard
-                {this.renderRedirect()}
-                <button onClick={
-                    localStorage.removeItem('connecte')
-                    
-                }>deconnexion</button>
+            <div>
+                <React.Fragment>
+                <Side/>
+                <BreadcrumSection />
+                    <ModalSection />
+                </React.Fragment>
             </div>
          )
     }

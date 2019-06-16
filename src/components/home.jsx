@@ -222,7 +222,6 @@ class Home extends React.Component {
             </div>
             </div>
 
-            
             <div className="col-md-3" id="fond-pub">
                   <h2>Votre Pub ici!</h2>
                   <img src="../images/med.jpg" alt="pub" id="image-pub"/>

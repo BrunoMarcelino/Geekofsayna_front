@@ -77,4 +77,3 @@ const AdminCardSection2 = () => {
 }
 
 export default AdminCardSection2;
-

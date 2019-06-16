@@ -49,7 +49,7 @@ class Home extends React.Component {
 
     callAPI() {
         fetch("http://localhost:8080/article")
-            .then(res => res.json())
+            //.then(res => res.json())
             .then(res => {
                 console.log("res", res);
 

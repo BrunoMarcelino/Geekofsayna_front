@@ -41,3 +41,14 @@
 #h3slide {
   font-weight: bold;
 }
+.accueil:hover {
+  color: rgb(122, 163, 161) !important;
+  font-weight: bold;
+}
+#logo-header {
+  width: 75px;
+  cursor: pointer;
+}
+.white-text {
+  cursor: pointer;
+}

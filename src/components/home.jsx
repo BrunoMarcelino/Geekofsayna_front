@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFormInline, MDBDropdown, MDBDropdownToggle, MDBDropdownMenu,  MDBDropdownItem, MDBContainer, MDBIcon } from "mdbreact";
+import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBContainer } from "mdbreact";
 import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask} from "mdbreact";
 
 class Home extends React.Component {
@@ -22,8 +22,9 @@ class Home extends React.Component {
               expand="md"
               scrolling
             >
-              <MDBContainer>
+             
                 <MDBNavbarBrand>
+                  <img src="../images/logo.png" id="logo-header" alt="imagelogo"/>
                   <strong className="white-text">ExtrActu</strong>
                 </MDBNavbarBrand>
                 <MDBNavbarToggler
@@ -36,28 +37,28 @@ class Home extends React.Component {
                 >
                   <MDBNavbarNav left>
                     <MDBNavItem active>
-                      <MDBNavLink to="#!">Accueil</MDBNavLink>
+                      <MDBNavLink to="#!" className="accueil">Accueil</MDBNavLink>
                     </MDBNavItem>
                     <MDBNavItem active>
-                      <MDBNavLink to="#!">Categorie</MDBNavLink>
+                      <MDBNavLink to="#!" className="accueil">Categorie</MDBNavLink>
                     </MDBNavItem>
                     <MDBNavItem active>
-                      <MDBNavLink to="#!">Protection</MDBNavLink>
+                      <MDBNavLink to="#!" className="accueil">Protection</MDBNavLink>
                     </MDBNavItem>
                     <MDBNavItem active>
-                      <MDBNavLink to="#!">Medicaux</MDBNavLink>
+                      <MDBNavLink to="#!" className="accueil">Medicaux</MDBNavLink>
                     </MDBNavItem>
                   </MDBNavbarNav>
                   <MDBNavbarNav right>
                     <MDBNavItem active>
-                        <MDBNavLink to="">Login</MDBNavLink>
+                        <MDBNavLink to="" className="accueil">Login</MDBNavLink>
                     </MDBNavItem>
                     <MDBNavItem active>
-                        <MDBNavLink to="#!">Register</MDBNavLink>
+                        <MDBNavLink to="#!" className="accueil">Register</MDBNavLink>
                     </MDBNavItem>
                   </MDBNavbarNav>
                 </MDBCollapse>
-              </MDBContainer>
+             
             </MDBNavbar>
       <MDBCarousel id="slide"
         activeItem={1}

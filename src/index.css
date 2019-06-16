@@ -227,13 +227,13 @@ main {
 }
 
 #lien-dasboard {
-  color: #176ec5 !important;
-  text-decoration: none;
+  color: #fbfcfd !important;
 } 
 
 #lien-dasboard:hover {
   font-weight: bold;
-  color:  rgb(167, 24, 24) !important;
+  color:  rgb(226, 210, 210) !important;
+  text-decoration: none !important;
 }
 #lien-dasboard-total {
   background-color: #2196f3 !important;

@@ -10,25 +10,25 @@ const TopNavigation = () => {
                 <img alt="MDB React Logo" className="img-fluid" src={logo}/>
             </a>
             <MDBListGroup className="list-group-flush" id="lien-dasboard-total">
-                <NavLink id="lien-dasboard" exact={true} to="/">
-                    <MDBListGroupItem>
+                <NavLink exact={true} to="/">
+                    <MDBListGroupItem active id="lien-dasboard" >
                         <MDBIcon icon="chart-pie" className="mr-3"/>
                         Dashboard
                     </MDBListGroupItem>
                 </NavLink>
-                <NavLink id="lien-dasboard" to="/actualites" >
-                    <MDBListGroupItem>
+                <NavLink to="/actualites" >
+                    <MDBListGroupItem id="lien-dasboard"  active>
                         <MDBIcon icon="user" className="mr-3"/>
                       Ajout Actualités
                     </MDBListGroupItem>
                 </NavLink>
-                <NavLink  id="lien-dasboard" to="/medicament" >
-                    <MDBListGroupItem>
+                <NavLink   to="/medicament" >
+                    <MDBListGroupItem id="lien-dasboard"  active>
                         Ajout Medicaments
                     </MDBListGroupItem>
                 </NavLink>
-                <NavLink id="lien-dasboard" to="/protection">
-                    <MDBListGroupItem>
+                <NavLink  to="/protection">
+                    <MDBListGroupItem id="lien-dasboard"  active>
                         <MDBIcon icon="map" className="mr-3"/>
                       Ajout Protéction
                     </MDBListGroupItem>

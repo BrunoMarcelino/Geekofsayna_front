@@ -9,6 +9,7 @@ import { Provider } from 'react-redux'
 import Store from './store/configureStore'
 import DashBoard from './components/dashBoard'
 import Article from './components/article'
+import Admin from './components/admin'
 
 function App() {
   return (

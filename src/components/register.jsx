@@ -1,7 +1,30 @@
 import React from 'react';
 import './register.css'
+import { connect } from 'react-redux'
+import { Redirect } from 'react-router-dom'
 
 class Register extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { userName: '', email: '' ,pwd:'',connecte:false}
+        this.handleChange = this.handleChange.bind(this)
+    }
+    renderRedirect = () => {
+        if (this.state.connecte) {
+            console.log(localStorage.getItem('connecte'));
+            
+          return <Redirect to='/dashboard' />
+        }
+      }
+    handleChange(e) {
+        this.setState({ [e.target.name]: e.target.value })  
+    }
+
+   enregistrement(e) {
+        const action = { type: "REGISTER", value: e }
+        this.props.dispatch(action)
+    }
+
     render() {
         return (
             <div id="totalregister">
@@ -56,6 +79,10 @@ class Register extends React.Component {
             </div>
         )
     }
+  }
+  const mapStateToProps = (state) => {
+    return {
+        listeArticle: state.listeArticle
+    }
 }
-
-export default Register;
+export default connect(mapStateToProps)(Register)

@@ -9,7 +9,7 @@ import { Provider } from 'react-redux'
 import Store from './store/configureStore'
 import DashBoard from './components/dashBoard'
 import Article from './components/article'
-import Admin from './components/admin'
+import Dash from './components/pages/sections/ModalSection'
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
           <Route path="/register" component={Register} />
           <Route path="/dashboard" component={DashBoard} />
           <Route path="/article/:id" component={Article } />
+          <Route path="/dash" component={Dash} />
         </Router>
       </Provider>
     </div>

@@ -57,6 +57,9 @@ class Home extends React.Component {
             });
 
     }
+    url(a){
+        return "http://localhost:8080/image/"+a
+    }
 
     render() {
         return (
@@ -183,6 +186,7 @@ class Home extends React.Component {
                 {this.renderRedirect()}
                 {this.state.reponse.length > 0 ? this.state.reponse.map((art) => {
                     return <div>
+                        <img src={this.url(art.image)}/>
                         <div>nom :{art.nom}</div>
                         <div>article :{art.article}</div>
 
